@@ -26,8 +26,11 @@ public class AnagramWord{
     }
     public static void main(String[] a){
         String str1, str2;
-        str1="Hello World";
-        str2="World Hello";
+        Scanner input1 = new Scanner(System.in);
+        System.out.println("Enter first word");
+        str1 = input1.nextLine();
+        System.out.println("Enter second word");
+        str2 = input1.nextLine();
         if (areAnagrams(str1, str2))
             System.out.println("They are ANAGRAMS");
         else System.out.println("They are not ANAGRAMS");
